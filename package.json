@@ -1,15 +1,15 @@
 {
-  "name": "com.jiangyin.gameframework",
+  "name": "com.henuo.gameframework",
   "displayName": "Game Framework",
   "category": "Game Framework",
-  "description": "This is literally a game framework, based on Unity game engine. It encapsulates commonly used game modules during development, and, to a large degree, standardises the process, enhances the development speed and ensures the product quality.",
-  "version": "2021.05.31",
-  "unity": "2017.1",
+  "description": "这是本人整理的UPM插件,并非是本人开发 著作权由开发者所有 开发者github:https://github.com/EllanJiang/UnityGameFramework.git",
+  "version": "1.1.0",
+  "unity": "2021.3",
   "keywords": [
     "Game Framework"
   ],
   "author": {
-    "name": "Jiang Yin",
+    "name": "HeNuo",
     "email": "ellan@gameframework.cn",
     "url": "https://gameframework.cn/"
   },
@@ -26,5 +26,11 @@
     "type": "git",
     "url": "git@github.com:EllanJiang/UnityGameFramework.git",
     "revision": "9e04764c9098106a83b5110923d4acf1b1a13344"
+  },
+  "samples": [
+  {
+    "displayName": "StarForce",
+    "description": "使用案例",
+    "path": "Samples~/StarForce"
   }
 }
