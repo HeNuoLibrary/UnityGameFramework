@@ -28,9 +28,10 @@
     "revision": "9e04764c9098106a83b5110923d4acf1b1a13344"
   },
   "samples": [
-  {
-    "displayName": "StarForce",
-    "description": "使用案例",
-    "path": "Samples~/StarForce"
-  }
+    {
+      "displayName": "StarForce",
+      "description": "使用案例",
+      "path": "Samples~/StarForce"
+    }
+  ]
 }
