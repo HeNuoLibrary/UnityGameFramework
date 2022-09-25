@@ -3,7 +3,7 @@
   "displayName": "Game Framework",
   "category": "Game Framework",
   "description": "这是本人整理的UPM插件,并非是本人开发 著作权由开发者所有 开发者github:https://github.com/EllanJiang/UnityGameFramework.git",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "unity": "2021.3",
   "keywords": [
     "Game Framework"
@@ -30,7 +30,7 @@
   "samples": [
   {
     "displayName": "StarForce",
-    "description": "使用案例",
+    "description": "使用案例,将StarForce中的文件拷贝到assets文件目录运行",
     "path": "Samples~/StarForce"
   }
   ]
