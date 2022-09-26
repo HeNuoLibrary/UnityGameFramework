@@ -77,7 +77,14 @@ namespace UnityGameFramework.Editor
         /// <returns>指定基类的所有子类的名称。</returns>
         internal static string[] GetRuntimeTypeNames(System.Type typeBase)
         {
-            return GetTypeNames(typeBase, RuntimeAssemblyNames);
+            CustomAssemblys CustomAssemblysManifest = Resources.Load<CustomAssemblys>("CustomAssemblys");
+            List<string> AssemblyNames = RuntimeAssemblyNames.ToList();
+            if (CustomAssemblysManifest != null)
+            {
+                AssemblyNames.AddRange(CustomAssemblysManifest.Assemblys);
+            }
+
+            return GetTypeNames(typeBase, AssemblyNames.ToArray());
         }
 
         /// <summary>
@@ -87,7 +94,13 @@ namespace UnityGameFramework.Editor
         /// <returns>指定基类的所有子类的名称。</returns>
         internal static string[] GetRuntimeOrEditorTypeNames(System.Type typeBase)
         {
-            return GetTypeNames(typeBase, RuntimeOrEditorAssemblyNames);
+            CustomAssemblys CustomAssemblysManifest = Resources.Load<CustomAssemblys>("CustomAssemblys");
+            List<string> AssemblyNames = RuntimeOrEditorAssemblyNames.ToList();
+            if (CustomAssemblysManifest != null)
+            {
+                AssemblyNames.AddRange(CustomAssemblysManifest.Assemblys);
+            }
+            return GetTypeNames(typeBase, AssemblyNames.ToArray());
         }
 
         private static string[] GetTypeNames(System.Type typeBase, string[] assemblyNames)

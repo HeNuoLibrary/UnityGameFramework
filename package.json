@@ -3,7 +3,7 @@
   "displayName": "Game Framework",
   "category": "Game Framework",
   "description": "这是本人整理的UPM插件,并非是本人开发 著作权由开发者所有 开发者github:https://github.com/EllanJiang/UnityGameFramework.git",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "unity": "2021.3",
   "keywords": [
     "Game Framework"
