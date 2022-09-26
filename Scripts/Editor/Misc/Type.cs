@@ -78,7 +78,7 @@ namespace UnityGameFramework.Editor
         /// <returns>指定基类的所有子类的名称。</returns>
         internal static string[] GetRuntimeTypeNames(System.Type typeBase)
         {
-            CustomAssemblys CustomAssemblysManifest = Resources.Load<CustomAssemblys>("CustomAssemblys");
+            CustomAssemblys CustomAssemblysManifest = UnityEngine.Resources.Load<CustomAssemblys>("CustomAssemblys");
             List<string> AssemblyNames = RuntimeAssemblyNames.ToList();
             if (CustomAssemblysManifest != null)
             {
@@ -95,7 +95,7 @@ namespace UnityGameFramework.Editor
         /// <returns>指定基类的所有子类的名称。</returns>
         internal static string[] GetRuntimeOrEditorTypeNames(System.Type typeBase)
         {
-            CustomAssemblys CustomAssemblysManifest = Resources.Load<CustomAssemblys>("CustomAssemblys");
+            CustomAssemblys CustomAssemblysManifest = UnityEngine.Resources.Load<CustomAssemblys>("CustomAssemblys");
             List<string> AssemblyNames = RuntimeOrEditorAssemblyNames.ToList();
             if (CustomAssemblysManifest != null)
             {
